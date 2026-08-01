@@ -1,8 +1,25 @@
 aid: pivotal-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pivotal-health.png
 name: Pivotal Health
-description: 'Pivotal Health is a company surfaced as a portfolio company of bessemer-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Pivotal Health (formerly Radix Health) is a healthcare technology company
+  and self-described "IDR Authority" that helps medical providers secure fair out-of-network
+  reimbursement through the federal Independent Dispute Resolution (IDR) process created
+  by the No Surprises Act. Its platform combines automated eligibility screening, dispute
+  submission software integrated with major revenue cycle management (RCM) systems,
+  payer data, and white-glove managed services across emergency medicine, anesthesiology,
+  radiology, surgery, pathology, air ambulance, and hospitals and health systems. Pivotal
+  Health is backed by Bessemer Venture Partners.'
 url: https://raw.githubusercontent.com/api-evangelist/pivotal-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Healthcare
+- Revenue Cycle Management
+- Independent Dispute Resolution
+- No Surprises Act
+- Reimbursement
+- Insurance Claims
+- Health Tech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pivotal-health-domain-security.yml
 - type: Website
   url: https://pivotalhealth.ai/
+- type: About
+  url: https://pivotalhealth.ai/about-us
+- type: PrivacyPolicy
+  url: https://pivotalhealth.ai/privacy-policy
+- type: TermsOfService
+  url: https://pivotalhealth.ai/terms-and-conditions
+- type: SignUp
+  url: https://pivotalhealth.ai/demo
+- type: Login
+  url: https://app.radixhealth.io/
+- type: Resources
+  url: https://pivotalhealth.ai/resources
+- type: Careers
+  url: https://pivotalhealth.ai/careers
+- type: LinkedIn
+  url: https://www.linkedin.com/company/radix-health-io/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
